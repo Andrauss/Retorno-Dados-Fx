@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="384.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.111" fx:controller="com.fandrauss.PesquisaController">
+   <children>
+      <TableView fx:id="tblProdutos" layoutX="8.0" layoutY="14.0" prefHeight="337.0" prefWidth="600.0" AnchorPane.bottomAnchor="47.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <columns>
+          <TableColumn fx:id="colCodigo" prefWidth="75.0" text="Código" />
+          <TableColumn fx:id="colDescricao" prefWidth="220.0" text="Descrição" />
+            <TableColumn fx:id="colValor" minWidth="0.0" prefWidth="67.0" text="Valor" />
+        </columns>
+      </TableView>
+      <Button layoutX="529.0" layoutY="357.0" mnemonicParsing="false" onAction="#selecionar" text="Selecionar" AnchorPane.bottomAnchor="10.0" AnchorPane.rightAnchor="10.0" />
+   </children>
+</AnchorPane>
